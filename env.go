@@ -67,6 +67,7 @@ func EnvOrDefaultStringSlice(name, separator string, def []string) []string {
 			}
 			result = append(result, trimmed)
 		}
+		return result
 	}
 	return def
 }
