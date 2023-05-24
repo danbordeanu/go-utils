@@ -1,4 +1,4 @@
-module github.com/coderollers/go-utils
+module github.com/danbordeanu/go-utils
 
 go 1.18
 
