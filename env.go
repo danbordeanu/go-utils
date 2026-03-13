@@ -26,7 +26,7 @@ func EnvOrDefault(name, def string) string {
 // Note: It will return the value of def if the environment variable is set to an empty string.
 func EnvOrDefaultInt64(name string, def int64) int64 {
 	if v, ok := os.LookupEnv(name); ok && v != "" {
-		vc, _ := strconv.ParseInt(v, 10, 32)
+		vc, _ := strconv.ParseInt(v, 10, 64)
 		return vc
 	}
 	return def
